@@ -1,13 +1,5 @@
 import React, {Component} from 'react';
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-} from 'reactstrap';
+import {Collapse, Nav, Navbar, NavbarToggler, NavItem, NavLink,} from 'reactstrap';
 
 const links = [
     {href: '/', text: 'Home'},
@@ -16,7 +8,8 @@ const links = [
     {href: '#cata', text: 'Categories'},
     {href: '#test', text: 'Blogs'},
     {href: '#test2', text: 'News'},
-    {href: '/login', text: 'LOGIN'},
+    {href: '/login', text: 'SignIn', className: 'red'},
+    {href: '/register', text: 'SignUp'},
 ];
 
 const createNavItem = ({href, text, className}) => (

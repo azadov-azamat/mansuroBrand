@@ -1,7 +1,7 @@
 import React from "react";
 import Navbar1 from "../Navbar1";
 import {Col, Container, Row} from "reactstrap";
-import Footer1 from "../Footer1";
+import Footer from "../Footer";
 import Menu from "../Menu";
 
 export default function AboutUS() {
@@ -48,7 +48,7 @@ export default function AboutUS() {
                 </Row>
 
             </Container>
-            <Footer1/>
+            <Footer/>
         </>
     )
 }

@@ -3,7 +3,7 @@ import {Col, Container, Row} from "reactstrap";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faEnvelope, faHome, faPhoneAlt, faPrint} from "@fortawesome/free-solid-svg-icons";
 
-export default function Footer1() {
+export default function Footer() {
     return (
         <>
             <footer color="unique-color-dark" className="page-footer font-small pt-0 ">

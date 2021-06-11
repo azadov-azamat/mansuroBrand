@@ -1,69 +1,48 @@
 import React from "react";
 import {Col, Row} from "reactstrap";
 import {Link, useHistory} from "react-router-dom";
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faCashRegister, faSearch} from "@fortawesome/free-solid-svg-icons";
 
 export default function Menu() {
 
     let history = useHistory();
 
-    function home() {
-        history.push("/");
-    }
-
-    function register() {
-        history.push("/register");
-    }
-
-    function about() {
-        history.push("/about");
-    }
-
-    function service() {
-        history.push("/service");
-    }
-
-    function gallery() {
-        history.push("/gallery");
-    }
 
     return (
         <div className="menu">
             <Row>
                 <Col md={12}>
-                    <ul className='list'>
+                    <ul className='list pl-5'>
                         <li>
                             <div className="div">
-                                <Link className={'link'} onClick={home}>
+                                <Link className={'link'} to='/'>
                                     Home
                                 </Link>
                             </div>
                         </li>
                         <li>
                             <div className="div">
-                                <Link className={'link'} onClick={about}>
+                                <Link className={'link'} to='/about'>
                                     About US
                                 </Link>
                             </div>
                         </li>
                         <li>
                             <div className="div">
-                                <Link className="link" onClick={service}>
+                                <Link className="link" to='/service'>
                                     Service
                                 </Link>
                             </div>
                         </li>
                         <li>
                             <div className="div">
-                                <Link className="link" onClick={gallery}>
+                                <Link className="link" to='/gallery'>
                                     Gallery
                                 </Link>
                             </div>
                         </li>
                         <li>
                             <div className="div">
-                                <Link className="link" onClick={register}>
+                                <Link className="link" to='/register'>
                                     Register
                                 </Link>
                             </div>
